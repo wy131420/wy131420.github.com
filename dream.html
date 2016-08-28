@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>建设中的忘忧梦想站</title>
+<link href="css.dream.css" rel="stylesheet">
+
+<style>
+
+</style>
+<script>
+window.onload = function(){
+		var timer =null;
+		function toDou(n){
+			return n<10?'0'+n:''+n;
+		}
+		function time(){
+			var arr = ['日','一','二','三','四','五','六'];
+			var oDate = new Date();
+			var year = oDate.getFullYear();
+			var month =oDate.getMonth()+1;
+			var week = oDate.getDay();//星期几
+			var date = oDate.getDate();
+			
+			var h = oDate.getHours();
+			var m = oDate.getMinutes();
+			var s = oDate.getSeconds();
+			//oDate.getMilliseconds();//毫秒
+			var oTime = document.getElementById('now_time');
+			oTime.innerHTML = '现在时间是：'+year+'年 '+toDou(month)+'月'+toDou(date)+'日 星期'+arr[week]+' '+toDou(h)+':'+toDou(m)+':'+toDou(s);
+		}
+		time();
+		clearInterval(timer);
+		timer = setInterval(time,1000);
+	};
+</script>
+</head>
+
+<body>
+<p id="motto">我的座右铭:忘记背后，勇敢朝前，向着标竿直跑!!!</p>
+<p id="now_time"></p>
+<div class="header">
+	<p>欢迎来到我的个人站</p>
+    <p>Welcome to my personal stand</p>
+</div>
+<div class="footer">
+	<strong>联系方式:</strong>
+	<em>QQ:517958224</em>
+    <span>Email:zhiwen_2014@163.com</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+	padding:0;
+	margin:0;	
+}
+body{
+	width:100%;
+	height:100%;
+	background:rgba(204,255,153,0.7);
+}
+#motto{
+	margin-left:20px;
+	margin-top:10px;
+	color:red;
+}
+#now_time{
+	position:absolute;
+	margin-top:10px;
+	margin-right:10px;
+	color:green;
+	top:0;
+	right:0;	
+}
+.header{
+	width:100%;
+	height:50px;
+	text-align:center;
+	line-height:20px;
+
+	background:rgba(0,255,255,.2)
+}
+
+
+
+
+
+
+
+
+
+.footer{
+	width:100%;
+	height:20px;
+	text-align:center;
+	line-height:20px;
+}
+.footer em{
+	margin-right:100px;	
+}
