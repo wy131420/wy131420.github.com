@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小作品</title>
+<style>
+body{background:pink}
+*{margin:0;padding:0;}
+#box{width:100px; height:100px; background:aqua; position:absolute; top:0; left:0;}
+</style>
+<script>
+window.onload=function(){
+	var oBox = document.getElementById('box');
+	var iSpeedX = 6;
+	var iSpeedY = 6;
+	setInterval(function(){
+		var l = oBox.offsetLeft+iSpeedX;
+		var t = oBox.offsetTop+iSpeedY;
+		
+		if(t>=(document.documentElement.clientHeight-oBox.offsetHeight)){
+			t = document.documentElement.clientHeight-oBox.offsetHeight;
+			iSpeedY*=-1;
+		}
+		
+		if(t<=0){
+			t = 0;
+			iSpeedY*=-1;
+		}
+		
+		if(l>(document.documentElement.clientWidth-oBox.offsetWidth)){
+			l = document.documentElement.clientWidth-oBox.offsetWidth;
+			iSpeedX*=-1;
+		}
+		
+		if(l<=0){
+			l = 0;
+			iSpeedX*=-1;
+		}
+		
+		oBox.style.left = l+'px';
+		oBox.style.top = t+'px';
+	},30);
+};
+</script>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+</html>
