@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="UTF-8" />
+<title>小米手机4</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/product-mi4.css" />
+<script type="text/javascript" src="js/xmst.js"></script>
+<script type="text/javascript" src="js/jquery_002.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+</head>
+<body>
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+           <a href="#">小米网</a>
+           <span class="sep">|</span><a href="#">MIUI</a>
+           <span class="sep">|</span><a href="#">米聊</a>
+           <span class="sep">|</span><a href="#">游戏</a>
+           <span class="sep">|</span><a href="#">多看阅读</a>
+           <span class="sep">|</span><a href="#">云服务</a>
+           <span class="sep">|</span><a href="#">小米网移动版</a>
+        </div>
+        <div class="topbar-info J_userInfo"> 
+           <a data-needlogin="true" href="#">登录</a>
+           <span class="sep">|</span>
+           <a  href="#">注册</a>
+        </div>
+    </div>
+</div>
+<div class="site-header container">
+    <div class="site-logo">
+        <a class="logo" href="#"><i class="iconfont">&#xe61d;</i></a>
+    </div>
+    <div class="header-info">
+        <div class="search-section">
+            <form id="J_searchForm" class="search-form clearfix" action="/search" method="get">
+                <input class="search-text" type="search" name="keyword" value="" autocomplete="off" data-search-config={'defaultWords':["小米手机3","红米手机","贴膜","后盖","耳机","电池","生活周边","挂饰","米兔"]} placeholder="搜索您需要的商品" />
+                <input type="submit" class="search-btn iconfont" value="&#xe630;" />
+                <div class="hot-words"><a href="#">小米手机4</a><a href="#">小米电视</a><a href="#">小米手机3</a></div>
+            </form>
+        </div>
+        <div class="cart-section">
+            <a id="J_miniCart" class="mini-cart" href="#"><i class="iconfont">&#xe609;</i>购物车<span class="mini-cart-num J_cartNum"></span></a>
+            <div id="J_miniCartList" class="mini-cart-list">
+                <p class="loading">数据加载中，请稍后...</p>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav clearfix">
+        <div id="J_categoryContainer" class="nav-category">
+            <a class="btn-category-list" href="#">全部商品分类</a>
+            <div class="nav-category-section" style="display: none;">
+                <ul class="nav-category-list">
+                    <li class="nav-category-item nav-category-item-first">
+                    	<div class="nav-category-content">
+                        	<a class="title" href="#">购买手机</a>
+                            <div class="links">
+                                <a href="">小米4</a><a href="#">小米3</a><a href="#">红米</a><a href="#">红米Note</a>
+                            </div>
+                            <div class="nav-category-children">
+                                <ul class="children-list">
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="购买小米手机4"><span class="text">小米手机4</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="购买小米手机3"><span class="text">小米手机3</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="购买红米手机1S"><span class="text">红米手机1S</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="购买红米Note"><span class="text">红米Note</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="根据机型选配件"><span class="text">根据机型选配件</span></a></li>
+                                </ul>
+                                <div class="children-special-section">
+                                    <h4>明星配件</h4>
+                                    <ul>
+                                        <li><a href="#">小米手环 79元</a></li>
+                                        <li><a href="#">小米活塞耳机 99元</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-category-item">
+                    	<div class="nav-category-content">
+                        	<a  class="title" href="javascript:%20void(0);">购买电视与平板</a>
+                            <div class="links">
+                            	<a href="#">小米电视</a><a href="#">小米盒子</a><a href="#">小米平板</a>
+                            </div>
+                            <div class="nav-category-children">
+                            	<ul class="children-list">
+                                	<li><a href="#"><img src="images/mi4.jpg" alt="购买小米电视2"><span class="text">小米电视2</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="购买小米盒子"><span class="text">小米盒子</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="购买小米平板"><span class="text">小米平板</span></a></li>
+                                </ul>
+                                <div class="children-special-section">
+                                	<h4>明星配件</h4>
+                                    <ul>
+                                    	<li><a href="#">小米电视配件</a></li>
+                                        <li><a href="#">小米盒子配件</a></li>
+                                        <li><a href="#">小米平板配件</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-category-item">
+                    	<div class="nav-category-content">
+                        	<a class="title" href="#">后盖与个性化配件</a>
+                            <div class="links">
+                            	<a href="#">米键</a><a href="#">后盖</a><a href="#">贴纸</a><a href="#">手机支架</a>
+                            </div>
+                            <div class="nav-category-children">
+                            	<ul class="children-list">
+                                	<li><a href="#"><img src="images/mi4.jpg" alt="米键" height="40" width="40"><span class="text">米键</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="后盖" height="40" width="40"><span class="text">后盖</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="贴纸" height="40" width="40"><span class="text">贴纸</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="挂饰" height="40" width="40"><span class="text">挂饰</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="手机支架" height="40" width="40"><span class="text">手机支架</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="耳机绕线器" height="40" width="40"><span class="text">耳机绕线器</span></a></li>
+                                </ul>
+                                <div class="children-special-section">
+                                	<h4>热门商品</h4>
+                                    <ul>
+                                    	<li><a href="#">红米3D米兔系列后盖 39元</a></li>
+                                        <li><a href="#">小米2/2S足球系列背贴 19元</a></li>
+                                        <li><a href="#">小米4极简原色保护壳 49元</a></li>
+                                        <li><a href="#">红米Note清水软胶保护套 39元</a></li>
+                                        <li><a href="#">fotopro八爪鱼相机支架 48元</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-category-item">
+                    	<div class="nav-category-content">
+                        	<a class="title" href="#">保护套与贴膜</a>
+                            <div class="links">
+                            	<a href="#">保护套/保护壳</a><a href="#">贴膜</a><a href="#">防尘塞</a>
+                            </div>
+                            <div class="nav-category-children">
+                            	<ul class="children-list">
+                                	<li><a href="#"><img src="images/mi4.jpg" alt="保护套/保护壳" height="40" width="40"><span class="text">保护套/保护壳</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="贴膜" height="40" width="40"><span class="text">贴膜</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="防尘塞" height="40" width="40"><span class="text">防尘塞</span></a></li>
+                                </ul>
+                                <div class="children-special-section">
+                                	<h4>热门商品</h4>
+                                    <ul>
+                                    	<li><a href="#">小米3极清高透贴膜 30元</a></li>
+                                        <li><a href="#">红米至简翻盖支架保护套 49元</a></li>
+                                        <li><a href="#">小米3普通高透贴膜 19元</a></li>
+                                        <li><a href="#">2/2S软胶保护套 19元</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-category-item">
+                    	<div class="nav-category-content">
+                        	<a class="title" href="#">移动电源与电池</a>
+                            <div class="links">
+                            	<a href="#">小米移动电源</a>
+                                <a href="#">电池</a>
+                                <a href="#">充电器</a>
+                            </div>
+                            <div class="nav-category-children">
+                            	<ul class="children-list">
+                                	<li><a href="#"><img src="images/mi4.jpg" alt="小米移动电源" height="40" width="40"><span class="text">小米移动电源</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="品牌移动电源" height="40" width="40"><span class="text">品牌移动电源</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="电池" height="40" width="40"><span class="text">电池</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="充电器" height="40" width="40"><span class="text">充电器</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="线材" height="40" width="40"><span class="text">线材</span></a></li>
+                                </ul>
+                                <div class="children-special-section">
+                                	<h4>热门商品</h4>
+                                    <ul>
+                                    	<li><a href="#">小米手机2S原装电池 59元</a></li>
+                                        <li><a href="#">10400mAh银色移动电源 69元</a></li>
+                                        <li><a href="#">红米电池 49元</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-category-item">
+                    	<div class="nav-category-content">
+                        	<a class="title" href="#">路由器与存储</a>
+                            <div class="links">
+                            	<a href="#">小米路由器</a>
+                                <a href="#">随身WiFi</a>
+                                <a href="#">存储卡</a>
+                            </div>
+                            <div class="nav-category-children">
+                            	<ul class="children-list">
+                                	<li><a href="#"><img src="images/mi4.jpg" alt="小米路由器" height="40" width="40"><span class="text">小米路由器</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="小米路由器mini" height="40" width="40"><span class="text">小米路由器mini</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="随身WiFi" height="40" width="40"><span class="text">随身WiFi</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="存储卡" height="40" width="40"><span class="text">存储卡</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="路由器" height="40" width="40"><span class="text">路由器</span></a></li>
+                                </ul>
+                                <div class="children-special-section">
+                                	<h4>热门商品</h4>
+                                    <ul>
+                                    	<li><a href="#">小米随身WIFI 19.9元</a></li>
+                                        <li><a href="#">东芝Class4存储卡 44.9元</a></li>
+                                        <li><a href="#">SanDisk 16GB存储卡 49.9元</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-category-item">
+                    	<div class="nav-category-content">
+                        	<a class="title" href="#">耳机与音箱</a>
+                            <div class="links">
+                            	<a href="#">小米活塞耳机</a>
+                                <a href="#">更多耳机</a>
+                                <a href="#">音箱</a>
+                            </div>
+                            <div class="nav-category-children">
+                            	<ul class="children-list">
+                                	<li><a href="#"><img src="images/mi4.jpg" alt="小米活塞耳机" height="40" width="40"><span class="text">小米活塞耳机</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="更多耳机" height="40" width="40"><span class="text">更多耳机</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="音箱" height="40" width="40"><span class="text">音箱</span></a></li>
+                                </ul>
+                                <div class="children-special-section">
+                                    <h4>热门商品</h4>
+                                    <ul>
+                                        <li><a href="#">小米活塞耳机简装版 49元</a></li>
+                                        <li><a href="#">小米小钢炮蓝牙音箱 149元</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-category-item">
+                    	<div class="nav-category-content">
+                        	<a class="title" href="#">小米生活方式</a>
+                            <div class="links">
+                            	<a href="#">小米手环</a>
+                                <a href="#">服装</a>
+                                <a href="#">血压计</a>
+                                <a href="#">米兔</a>
+                            </div>
+                            <div class="nav-category-children">
+                            	<ul class="children-list">
+                                	<li><a href="#"><img src="images/mi4.jpg" alt="小米手环" height="40" width="40"><span class="text">小米手环</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="服装" height="40" width="40"><span class="text">服装</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="米兔" height="40" width="40"><span class="text">米兔</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="血压计" height="40" width="40"><span class="text">血压计</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="背包" height="40" width="40"><span class="text">背包</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="小米鼠标垫" height="40" width="40"><span class="text">小米鼠标垫</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="生活周边" height="40" width="40"><span class="text">生活周边</span></a></li>
+                                    <li><a href="#"><img src="images/mi4.jpg" alt="拉卡拉刷卡器" height="40" width="40"><span class="text">拉卡拉刷卡器</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-main">
+            <ul class="nav-main-list J_menuNavMain clearfix">
+                <li class="nav-main-item"><a href="#"><span class="text">首页</span></a></li>
+                <li class="nav-main-item">
+                    <a href="javascript: void(0);"><span class="text">小米手机</span><span class="arrow"></span></a>
+                    <div class="nav-main-children">
+                        <ul class="children-list clearfix">
+                            <li class="first">
+                                <a class="item-detail" href="#">
+                                    <span class="title" style="font-size:20px;">小米手机4</span>
+                                    <span class="desc">工艺和手感，超乎想象</span>
+                                    <span class="price"><b>1999</b>元起</span>
+                                    <span class="thumb">
+                                        <img src="images/nav-phone-mi4.jpg" srcset="images/nav-phone-mi4_2x.jpg 2x" alt="小米手机3" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item-detail" href="#">
+                                    <span class="title" style="font-size:20px;">小米手机3直降200</span>
+                                    <span class="desc">经典旗舰机型性价比之王</span>
+                                    <span class="price">特价：<b>1499</b>元起</span>
+                                    <span class="thumb">
+                                        <img src="images/nav-phone-mi3.jpg" srcset="images/nav-phone-mi3_2x.jpg 2x" alt="小米手机3" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-main-item">
+                    <a href="javascript: void(0);"><span class="text">红米</span><span class="arrow"></span></a>
+                    <div class="nav-main-children">
+                        <ul class="children-list clearfix">
+                            <li class="first">
+                                <div class="item-detail">
+                                    <span class="title">红米1S 4G版</span>
+                                    <span class="desc">千元4G手机性价比之王</span>
+                                    <span class="price"><b>699</b>元起</span>
+                                    <span class="thumb">
+                                        <img src="images/nav-phone-hongmi.jpg" srcset="images/nav-phone-hongmi_2x.jpg 2x" alt="红米手机" width="160" height="160"/>
+                                    </span>
+                                    <span class="link">
+                                        <a href="#">了解4G版<i class="iconfont">&#xe605;</i></a>
+                                        <a href="#">另有双卡双待3G版<i class="iconfont">&#xe605;</i></a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-detail">
+                                    <span class="title">红米Note 4G版</span>
+                                    <span class="desc">5.5英寸大屏，支持4G网络</span>
+                                    <span class="price"><b>999</b>元</span>
+                                    <span class="thumb">
+                                        <img src="images/nav-phone-note.jpg" srcset="images/nav-phone-note_2x.jpg 2x" alt="红米Note" width="160" height="160"/>
+                                    </span>
+                                    <span class="link">
+                                        <a href="#">了解4G增强版<i class="iconfont">&#xe605;</i></a>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-main-item"><a href="#"><span class="text">小米平板</span></a></li>
+                <li class="nav-main-item"><a href="#"><span class="text">小米电视</span></a></li>
+                <li class="nav-main-item">
+                    <a href="javascript: void(0);"><span class="text">盒子</span><span class="arrow"></span></a>
+                    <div class="nav-main-children">
+                        <ul class="children-list clearfix">
+                            <li class="first">
+                                <a class="item-detail" href="#">
+                                    <span class="title">小米盒子 标准版</span>
+                                    <span class="desc">高清网络机顶盒<br>天猫销量第一</span>
+                                    <span class="price"><b>299</b>元</span>
+                                    <span class="thumb">
+                                        <img src="images/nav-hezi.jpg" srcset="images/nav-hezi_2x.jpg 2x" alt="小米手机3" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item-detail" href="#">
+                                    <span class="title">小米盒子 增强版</span>
+                                    <span class="desc">首款4K超高清网络机顶盒<br/>海量高清网络电影、电视剧</span>
+                                    <span class="price"><b>399</b>元</span>
+                                    <span class="thumb">
+                                        <img src="images/nav-hezis.jpg" srcset="images/nav-hezis_2x.jpg 2x" alt="小米手机2S" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-main-item">
+                    <a href="javascript: void(0);"><span class="text">路由器</span><span class="arrow"></span></a>
+                    <div class="nav-main-children">
+                        <ul class="children-list clearfix">
+                            <li class="first">
+                                <a class="item-detail" href="#">
+                                    <span class="title">小米路由器</span>
+                                    <span class="desc">顶配双频AC智能路由器<br>内置1TB大硬盘</span>
+                                    <span class="price"><b>699</b>元</span>
+                                    <span class="thumb">
+                                        <img src="images/T17.jpg"  alt="小米路由器" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item-detail" href="#">
+                                    <span class="title">小米路由器 mini</span>
+                                    <span class="desc">主流双频AC智能路由器<br>性价比之王</span>
+                                    <span class="price"><b>129</b>元</span>
+                                    <span class="thumb">
+                                        <img src="images/T1X.jpg"  alt="小米路由器 mini" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-main-item"><a href="#"><span class="text">合约机</span></a></li>
+                <li class="nav-main-item"><a href="#"><span class="text">服务</span></a></li>
+                <li class="nav-main-item"><a href="#"><span class="text">社区</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="open-buy-info"><a href="#">10月14日预约开放购买</a></div>
+</div>
+<div class="ahz-head cfl container">
+	<h2 class="ahz-head-leftCon">小米手机4</h2>
+	<div  class="ahz-head-rightCon J_head_rightCon">
+		<a href="#" class="f-chanel bold">概述</a><b>|</b>
+		<a href="#" class="f-chanel">功能</a><b>|</b>
+		<a href="#" class="f-chanel">工艺</a><b>|</b>
+		<a href="#" class="f-chanel">相机</a><b>|</b>
+		<a href="#" class="f-chanel">MIUI</a><b>|</b>
+		<a href="#" class="f-chanel">图集</a><b>|</b>
+		<a href="#" class="f-chanel">参数</a><b>|</b>
+		<a href="#" class="f-chanel">保险</a><b>|</b>
+		<a href="#" class="f-chanel">评测</a><b>|</b>
+        <a href="#" class="f-chanel">F码通道</a>
+		<a href="#" class="btn btn-primary btn-small" style="padding-left: 10px;padding-right: 10px;">立即购买</a>
+	</div> 
+</div>
+<div class="nav">
+	<div class="bar J_fixed_bar hide showbar ahz-head">
+		<div class="container">
+			<h2 class="ahz-head-leftCon">小米手机4</h2>
+			<div  class="ahz-head-rightCon J_head_rightCon_b"></div>
+		</div>
+	</div>
+</div>
+<div class="J_mi4_content  mi4-content-feature hidetrans J_feature_body">
+	<div class="main J_feature_main">
+		<div class="slide mi4-content-feature-a">
+			<div class="feature-font">
+				<h2 class="feature-font-title-white"><b>工艺和手感，超乎想象</b></h2>
+				<p class="feature-font-detail">
+					不锈钢金属边框，5英寸屏超窄边<br>
+					小米手机4 依然是全球顶配性能之王<br>
+				</p>
+				<div class="feature-font-price">1999元</div>
+				<div class="feature-font-other">可选联通、电信3G版，移动4G版</div>
+			</div>
+			<div class="hide feature-img J_feature_leftbotomani"></div>
+			<div class="feature-forward J_feature_turndown hide"></div>
+		</div>
+		<div class="slide mi4-content-feature-b ">
+			<ul class="feature-crafts-slide J_feature_crafts">
+				<li class="step-0">
+					<h4 class="title">一块钢板的艺术之旅</h4>
+					<h3 class="title-info">40道工艺制程，193道精密工序</h3>
+					<div class="slide-img"></div>
+				</li>
+				<li class="step-1  stephideFont">
+					<h2 class="slide-title">01 <b>阶段</b></h2>
+					<h4 class="title-info">精选优质不锈钢材，冲压下料</h4>
+					<p class="slide-content">选择优质不锈钢材，硬度是铝合金的3倍，确保边框纤薄的同时结构坚固。再将整块钢板冲压下料，冲制初步定位孔与若干个工艺孔。定位孔可以在加工过程中起到固定钢板的作用。</p>
+					<div class="slide-img hideslideImg"></div>
+				</li>
+				<li class="step-2  stephideFont">
+					<h2 class="slide-title">02 <b>阶段</b></h2>
+					<h4 class="title-info">锻压成型</h4>
+					<p class="slide-content">下料后的钢材，进行百吨级大冲力拉伸、油压机锻压等工序，完成整体塑形。再清洗全身残留物。为确保更好的加工硬度和韧性，钢板会继续经历退火、精锻等工艺，整个过程历时10小时以上。</p>
+					<div class="slide-img hideslideImg"></div>
+				</li>
+				<li class="step-3  stephideFont">
+					<h2 class="slide-title">03 <b>阶段</b></h2>
+					<h4 class="title-info">数控机床精密加工</h4>
+					<p class="slide-content">钢材锻压成型后，进入CNC（数控机床）精密加工流程。58把机床铣刀，8步CNC加工，完成边框外形、小斜面等部分，再局部精铣出0.6mm的45个喇叭孔。CNC工艺的总体公差必须保证小于等于0.03mm。每一步CNC加工后都会进行一轮“清洗 - 去毛刺 - 清洗”处理，确保没有残渣干扰到下一步加工。</p>
+					<div class="slide-img hideslideImg"></div>
+				</li>
+				<li class="step-4  stephideFont">
+					<h2 class="slide-title">04 <b>阶段</b></h2>
+					<h4 class="title-info">釉面喷砂</h4>
+					<p class="slide-content">为使边框具有细腻手感，采用压缩空气为动力进行喷砂。首先遮蔽亮边小斜面，再使用喷砂枪将微米级的硅英锆喷射到侧边框及背部弧面，直至表面达到婴儿皮肤般的质感。</p>
+					<div class="slide-img hideslideImg"></div>
+				</li>
+				<li class="step-5  stephideFont">
+					<h2 class="slide-title">05 <b>阶段</b></h2>
+					<h4 class="title-info">PVD上色，防指纹涂层</h4>
+					<p class="slide-content">在真空环境下，利用磁控溅射金属粒子，使块体材料均匀沉积在边框上。真空镀膜工艺可以使边框金属质感更强，颜色持久耐磨。再使用双重镀膜工艺完成防指纹镀膜。顶级镀膜品质，高于一般水滴角测试结果，可达110°，让每一个边框都可以经的起水或油污的腐蚀。</p>
+					<div class="slide-img hideslideImg"></div>
+				</li>
+				<li class="step-7 stephideFont">
+					<h2 class="slide-title">06 <b>阶段</b></h2>
+					<h4 class="title-info">激光切割，完成边框</h4>
+					<p class="slide-content">将激光聚焦在连接点，不锈钢瞬间气化，从而使边框与废料分离，完成整体边框结构。再经过2位技师手工打磨，去除各切割点毛刺和残留物。边框最后会接受3重检验，确保打磨质量。</p>
+					<div class="slide-img hideslideImg"></div>
+				</li>
+			</ul>
+			<div class="feature-hoverfloat-left  J_feature_leftfor"></div>
+			<div class="feature-hoverfloat-right forward J_feature_rightfor"></div>
+			<div class="feature-ruler J_feature_ruler"></div>
+			<ul class="feature-crafts-btns clearfix J_feature_craftsbtn">
+				<li class="current btn-a"></li>
+				<li class="btn-b"></li>
+				<li class="btn-c"></li>
+				<li class="btn-d"></li>
+				<li class="btn-e"></li>
+				<li class="btn-f"></li>
+				<li class="btn-g"></li>
+			</ul>
+			<div class="feature-forwardown anihide J_feature_fwarddown hide"></div>
+		</div>
+		<div class="slide mi4-content-feature-c">
+			<div class="feature-font feature-font-public">
+				<h2 class="feature-font-title">
+					高色彩饱和度 夏普/JDI 屏<br>
+					<b>鲜艳度提升17%</b>
+				</h2>
+				<p class="feature-font-detail">
+					5英寸高色彩饱和度夏普 / JDI屏，1920 x 1080 分辨率<br>
+					NTSC色域值高达84%，比iPhone 5s 高17%<br>
+					2.63mm 超窄边屏幕<br>
+				</p>
+			</div>
+			<div class="feature-img  hide J_feature_midani"></div>
+		</div>
+		<div class="slide mi4-content-feature-d">
+			<div class="feature-font feature-font-public">
+				<h2 class="feature-font-title">
+					最快0.3秒对焦<br>
+					<b>索尼1300万像素极速相机</b>
+				</h2>
+				<p class="feature-font-detail">
+					最新索尼IMX 214堆栈式相机，拍照更快，画质更好。采用6片式镜头，f1.8超大光圈。硬件级实时HDR与高动态智能闪光改善画质，支持追踪对焦及先拍照后对焦技术，还可拍摄4K视频。<br>
+				</p>
+			</div>
+			<div class="feature-img anihide J_feature_camera"></div>
+		</div>
+		<div class="slide mi4-content-feature-e">
+			<div class="feature-font feature-font-public">
+				<h2 class="feature-font-title"><b>依然是全球顶配性能之王</b></h2>
+				<h3 class="feature-font-title-info">3GB超大内存，APP启动速度更快！</h3>
+				<p class="feature-font-detail">
+					骁龙 <sup>TM</sup> 8X74 AC 801  四核2.5GHz 处理器，Adreno 330 图形处理器，性能更快同时功耗更低。<br>
+					LPDDR3  3GB 超大极速内存，更快载入大型游戏和应用，更流畅的播放高清视频。
+				</p>
+			</div>
+			<div class="feature-img"></div>
+		</div>
+		<div class="slide mi4-content-feature-j">
+			<div class="feature-font feature-font-public">
+				<h2 class="feature-font-title">科技时尚，光栅纹后盖</h2>
+				<h3 class="feature-font-title-info">纹路精度达到0.06mm，层叠有序</h3>
+				<p class="feature-font-detail">
+					全新IMT内膜转印技术，将9层膜材融合，形成一片仅 0.8mm 薄的精致后盖，厚度仅有传统工艺产品的66% 。在这纤薄的后盖中，我们加入了光栅效果的纹理，每条纹理由细至 0.06mm 线条组成，纹理层叠有序、连续细腻。
+				</p>
+			</div>
+			<div class="feature-img"></div>
+		</div>
+		<div class="slide mi4-content-feature-f">
+			<div class="feature-font feature-font-public">
+				<h2 class="feature-font-title"><b>支持24种语言，全球6500万用户好评</b></h2>
+				<h3 class="feature-font-title-info">MIUI 做最好的安卓定制系统</h3>
+				<p class="feature-font-detail">
+					基于安卓深度定制，完美支持原生应用和游戏。数百万发烧友共同改进，每周升级。历经197次迭代升级，目前更新至 V5 版本。经6500万用户挑剔验证，它依然是这个世界最好用的安卓定制系统，也许没有之一。
+					<br><a href="#"  data-one="true">了解MIUI&gt;</a>
+				</p>
+			</div>
+			<div class="feature-img anihide J_feature_botmani"></div>
+		</div>
+		<div class="slide mi4-content-feature-g">
+			<div class="feature-font feature-font-public">
+				<h2 class="feature-font-title">支持最新 <b>4G</b> LTE网络</h2>
+				<p class="feature-font-detail">
+					4G LTE版支持中国移动4G网络 TDD-LTE 制式，上网速度大幅提升。同时支持中国移动3G网络（TD - SCDMA制式）和中国移动、中国联通2G网络（GSM制式）。另有联通3G、电信3G版可选。支持 FDD-LTE 网络的小米手机4 预计会在年底上市。
+				</p>
+				<ul class="feature-font-sudu J_feature_sudu  hideWidth">
+					<li>
+						<div class="sudu-title">4G下行速度为 132Mbps</div>
+						<div class="sudu-float">
+							<div class="sudu-cover"></div>
+							<div class="sudu-cover-b"></div>
+						</div>
+					</li>
+					<li class="gray">
+						<div class="sudu-title">3G下行速度为 2.8Mbps</div>
+						<div class="sudu-float">
+							<div class="sudu-cover"></div>
+							<div class="sudu-cover-b"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="feature-img"></div>
+		</div>
+		<div class="slide mi4-content-feature-i">
+			<div class="feature-font feature-font-public">
+				<h2 class="feature-font-title"><b>小米手环免密码解锁</b></h2>
+				<h3 class="feature-font-title-info">支持手环认证身份，无需输入密码即可解锁手机</h3>
+				<p class="feature-font-detail"><a href="#" target='_blank'>了解手环&gt;</a></p>
+			</div>
+			<div class="feature-img-a J_feature_leftimg anihide"></div>
+			<div class="feature-img-b J_feature_righimg anihide"></div>
+		</div>
+		<div class="slide mi4-content-feature-h">
+			<div class="feature-font ">
+				<div class="feature-font-price">
+					<b>16GB</b>1999元 /
+					<b>64GB</b>2499元
+				</div>
+				<h2 class="feature-font-title"><a href="#" data-one="true" class="" >了解功能&gt;</a></h2>
+			</div>
+			<div class="feature-img-a"></div>
+			<div class="feature-img-b"></div>
+			<div class="feature-float-high J_feature_float">
+				<div class="feature-float-img-a J_feature_float_imga"></div>
+				<div class="feature-float-img-b J_feature_float_imgb"></div>
+			</div>
+			<div class="feature-float-control J_feature_control"></div>
+		</div>
+	</div>
+	<ul class="nav-btns J_feature_nav hide">
+		<li class="current first"><b>概述</b></li>
+		<li><b>边框工艺</b></li>
+		<li><b>高色饱屏</b></li>
+		<li><b>极速相机</b></li>
+		<li><b>性能之王</b></li>
+		<li><b>精致后盖</b></li>
+		<li><b>MIUI V5</b></li>
+		<li><b>支持4G</b></li>
+		<li><b>手环解锁</b></li>
+		<li><b>黑白两色</b></li>
+	</ul>
+</div>
+<div class="hide J_preloadImg"><img src="images/fea-1.png" alt=""></div>
+<div class="hide J_preLoadReImg"><img src="images/fea-1_2x.png" alt=""></div>
+<script type="text/javascript">
+	var runFlag1=0;
+	var runFlag2=0;
+	var runFlag3=0;
+	var runFlag4=0;
+    var runFlag5 = 0;
+    var isMac= (navigator.userAgent.toLowerCase().indexOf("mac",0) != -1)?1:0;
+
+    if(isMac){
+    	var fileref=document.createElement("link");
+			fileref.setAttribute("rel", "stylesheet");
+			fileref.setAttribute("type", "text/css");
+			fileref.setAttribute("href", fontUrl);
+			document.getElementsByTagName("head")[0].appendChild(fileref);
+    }
+	var global={
+		TABS:["feature","fun","craft","camera","MIUI","gallery","params"]
+	};
+    var initNavBar=function(){
+        var str= $(".J_head_rightCon").html();
+
+        $(".J_head_rightCon_c").html(str);
+        $(".J_head_rightCon_b").html(str);
+    };
+    initNavBar();
+</script>
+<div class="site-footer">
+    <div class="container">
+        <div class="footer-service">
+            <ul class="list-service clearfix">
+                <li>
+                    <a rel="nofollow" href="#">
+                        <i class="iconfont">&#xe63a;</i>
+                        <strong>1小时快修服务</strong>
+                    </a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="#">
+                        <i class="iconfont">&#xe638;</i>
+                        <strong>7天无理由退货</strong>
+                    </a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="#">
+                        <i class="iconfont">&#xe651;</i>
+                        <strong>15天免费换货</strong>
+                    </a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="#">
+                        <i class="iconfont">&#xe64d;</i>
+                        <strong>满150元包邮</strong>
+                    </a>
+                </li>
+                <li>
+                    <a rel="nofollow" href="#">
+                        <i class="iconfont">&#xe63b;</i>
+                        <strong>460余家售后网点</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-links clearfix">
+            <dl class="col-links col-links-first">
+                <dt>帮助中心</dt>
+                <dd><a rel="nofollow" href="#" >购物指南</a></dd>
+                <dd><a rel="nofollow" href="#" >支付方式</a></dd>
+                <dd><a rel="nofollow" href="#" >配送方式</a></dd>
+            </dl>
+            <dl class="col-links ">
+                <dt>服务支持</dt>
+                <dd><a rel="nofollow" href="#" >售后政策</a></dd>
+                <dd><a rel="nofollow" href="#" >自助服务</a></dd>
+                <dd><a rel="nofollow" href="#" >相关下载</a></dd>
+            </dl>
+            <dl class="col-links ">
+                <dt>小米之家</dt>
+                <dd><a rel="nofollow" href="#" >小米之家</a></dd>
+                <dd><a rel="nofollow" href="#" >服务网点</a></dd>
+                <dd><a rel="nofollow" href="#" >预约亲临到店服务</a></dd>
+            </dl>
+            <dl class="col-links ">
+                <dt>关于小米</dt>
+                <dd><a rel="nofollow" href="#" >了解小米</a></dd>
+                <dd><a rel="nofollow" href="#" >加入小米</a></dd>
+                <dd><a rel="nofollow" href="#" >联系我们</a></dd>
+            </dl>
+            <dl class="col-links ">
+                <dt>关注我们</dt>
+                <dd><a rel="nofollow" href="#" >新浪微博</a></dd>
+                <dd><a rel="nofollow" href="#" >QQ空间</a></dd>
+                <dd><a rel="nofollow" class="J_modalWeixin" href="javascript: void(0);" >官方微信</a></dd>
+            </dl>
+            <div class="col-contact">
+                <p class="phone">400-100-5678</p>
+                <p>周一至周日 8:00-18:00<br />（仅收市话费）</p>
+                <a rel="nofollow" class="btn btn-primary btn-small" href="#">24小时在线客服</a>
+            </div>
+        </div>
+        <div class="footer-info clearfix">
+            <div class="info-text">
+                <p>小米旗下网站：
+                	<a href="#">小米网</a><span class="sep">|</span>
+                    <a href="#">MIUI</a><span class="sep">|</span>
+                    <a href="#">米聊</a><span class="sep">|</span>
+                    <a href="#">多看书城</a><span class="sep">|</span>
+                    <a href="#">小米路由器</a><span class="sep">|</span>
+                    <a href="#">繁體香港</a><span class="sep">|</span>
+                    <a href="#">繁體台灣</a><span class="sep">|</span>
+                    <a href="#">English</a><span class="sep">|</span>
+                    <a href="#">小米后院</a><span class="sep">|</span>
+                    <a href="#">小米天猫店</a><span class="sep">|</span>
+                    <a href="#">小米网盟</a>
+                </p>
+                <p>&copy;<a href="#" title="mi.com">mi.com</a> 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 <a href="#">京网文[2014]0059-0009号</a></p>
+            </div>
+            <div class="info-sites J_globalList">
+                <div class="global-site-current">简体中文</div>
+                <span class="arrow"></span>
+                <ul class="global-site-list">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">繁體台灣</a></li>
+                    <li><a href="#">繁體香港</a></li>
+                    <li><a href="#">Singapore</a></li>
+                    <li><a href="#">Malaysia</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Philippines</a></li>
+                    <li><a href="#">Indonesia</a></li>
+                    <li><a href="#">简体中文</a></li>
+                </ul>
+            </div>
+            <div class="info-links">
+                <a href="#"><img src="images/cnnicVerifyseal.png" alt="可信网站" /></a>
+                <a href="#"><img src="images/szfwVerifyseal.gif" alt="诚信网站" /></a>
+                <a href="#"><img src="images/save.jpg" alt="网上交易保障中心" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loginBox" class="modal modal-login hide" data-width="420" data-width-sns="420"  data-height="430">
+    <a class="close" data-dismiss="modal" href="javascript: void(0);"><i class="iconfont">&#xe617;</i></a>
+    <div class="modal-body" id="loginBox-con">
+        <p class="loginBox-loading">数据加载中，请稍后...</p>
+    </div>
+</div>
+<div id="J_modalWeixin" class="modal hide modal-weixin" data-width="480" data-height="520">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal"><i class="iconfont">&#xe617;</i></a>
+        <h3>小米手机官方微信二维码</h3>
+    </div>
+    <div class="modal-body" style="padding-top: 10px;">
+        <p style="margin: 0 0 10px;">打开微信，点击右上角的“魔法棒”，选择“扫一扫”功能，<br/>对准下方二维码即可。</p>
+        <img alt="" src="images/qr.png" />
+    </div>
+</div>
+<div class="modal hide xm-dm-queue" id="xmDmQueue">
+    <div class="modal-body">
+        <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont">&#xe617;</i></span>
+        <h3>正在排队，请稍候喔！</h3>
+        <p class="queue-tip">抱歉，由于访问人数太多导致服务器压力山大，请您耐心排队等待，<br/>我们将在稍后告诉您排队结果。</p>
+        <div class="queue-animate">
+            <div id="mituWalking" class="mitu-walk"> </div>
+            <div class="animate-mask animate-mask-left"></div>
+            <div class="animate-mask animate-mask-right"></div>
+        </div>
+    </div>
+</div>
+<div id="xmDmError" class="modal hide xm-dm-error">
+    <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont">&#xe617;</i></span>
+    <div class="modal-body">
+        <h3>抱歉，网络拥堵无法连接服务器</h3>
+        <p class="error-tip">由于访问人数太多导致服务器压力山大，请您稍后再重试。</p>
+        <p><a class="btn btn-primary" id="xmDmReload">重试</a></p>
+    </div>
+</div>
+<script type="text/javascript">
+	XIAOMI.GLOBAL_CONFIG = {
+		damiaoGoodsId:["2143600001","2141300060","2141200012","2141800007","2141800009","2135200029","2135000509","2143000004","2141700013","2141700014","2143000001","2143400005","2143400004","2143400001","2143400003"],
+		damiaoPresalesGoodsId:["2143400004","2143600001","2143400005","2141800009","2141800008","2143000004","2143300001"],
+		closeMiniCart:'0'
+	}
+	jQuery(function ($) {
+		XIAOMI.app.search.init();
+		XIAOMI.app.miniCart.init();
+		XIAOMI.app.updateMiniCart();
+		XIAOMI.app.navMenus.init($('.J_menuNavMain'), {
+			menuSelector: '.nav-main-item',
+			submenuSelector: '.nav-main-children',
+			effect: 'slide',
+			triggerEvent: 'hover'
+		});
+		XIAOMI.app.navCategory.init();
+		XIAOMI.app.footer.init();
+	});
+</script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/imagesloaded.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/productMi4a.js"></script>
+</body>
+</html>
