@@ -1313,3 +1313,14 @@ padding:0;
   }
 }
 /*-- //responsive media queries --*/
+.back{
+	width:32px;
+	height:40px;
+	background:aqua;
+	display:block;
+	text-decoration:none;
+	position:fixed;
+	right:20px;
+	bottom:20px;
+	
+}

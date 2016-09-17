@@ -23,18 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script src="js/modernizr.custom.97074.js"></script>
 	<!-- js -->
-	<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-	<!-- start-smoth-scrolling -->
+	
 </head>
 <body>
 <!-- banner -->
@@ -44,7 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="col-md-4 navigation">
 				<div class="nav-left">
 					<div class="grid__item color-4">
-						<a class="link link--kumya" href="index4.html">简历</a>
+						<a class="link link--kumya" href="index4.html" target="_blank">简历</a>
 					</div>
 				</div>
 				<div class="nav-right">
@@ -55,7 +44,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<li><a class="scroll" href="#about">Personal</a></li>
 									<li><a class="scroll" href="#portfolio">Portfolio</a></li>
 									<li><a class="scroll" href="#services">Services</a></li>
-									<li><a class="scroll" href="#contact">Contact</a></li>
 								</ul>
 							</nav>
 							<!-- script for menu -->
@@ -102,15 +90,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="skill-grids">
 					<div class="col-md-3 skills-grid text-center">
 						<div class="circle" id="circles-1"></div>
-						<p><a href="zwbl.html">HTML/CSS</a></p>
+						<p><a href="zwbl.html" target="_blank">HTML/CSS</a></p>
 					</div>
 					<div class="col-md-3 skills-grid text-center">
 						<div class="circle" id="circles-2"></div>
-						<p><a href="index5.html">JAVASCRIPT</a></p>
+						<p><a href="index5.html" target="_blank">JAVASCRIPT</a></p>
 					</div>
 					<div class="col-md-3 skills-grid text-center">
 						<div class="circle" id="circles-3"></div>
-						<p><a href="index3.html">HTML5/CSS3</a></p>
+						<p><a href="index3.html" target="_blank">HTML5/CSS3</a></p>
 					</div>
 					<div class="clearfix"> </div>
 				 <script type="text/javascript" src="js/circles.js"></script>
@@ -319,91 +307,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 </div>
 <!--//services-->
-<!--news-->
-<div class="news">
-	<div class="container">
-		<h3>NEWSLETTER SIGN UP</h3>
-		<p> Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing. </p>
-		<div class="na-m">
-			<div class="name">
-				<form>
-					<input type="text" placeholder="Enter email id" required>
-				</form>
-			</div>
-			<div class="button">
-				<form>
-					<input type="submit" value="Subscribe">
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--//news-->
-<!-- get-in -->
-<div id="contact" class="get-in-touch">
-	<div class="container">
-		<div class="get-info text-center">
-			<h3>GET IN TOUCH</h3>
-			<h4><i>Feel Free To Contact Us</i></h4>
-			<p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</p>
-		</div>
-	</div>
-</div>
-<!-- //get-in -->
-<!-- contact-us -->
-<div class="contact-us">
-	<div class="container">
-		<div class="contact-grids">
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></div>
-				<p>Beijing</p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
-				<p><a href="mailto:info@example.com">zhiwen_2014@163.com</a></p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></div>
-				<p>13800138000</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="contact-info">
-			<form>
-				<input type="text" placeholder="Your Name" required>
-				<input type="text" placeholder="Your E-Mail" required>
-				<input type="text" placeholder="Subject" required>
-				<textarea placeholder="Your Message" required></textarea>
-				<input type="submit" value="SEND MESSAGE">
-			</form>
-		</div>
-	</div>
-</div>
-<!-- //contact-us -->
-<!-- footer -->
-<div class="copy-right">
-	<div class="container">
-		<p> &copy; 2015 Peak. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
-	</div>
-</div>
-<!-- footer -->
-<!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //smooth scrolling -->
-<embed src="http://www.kuwo.cn/yinyue/3368118?catalog=yueku2016 width="0" height="0">
+<a class="back" href="#home">返回顶部</a>
 </body>
 </html>
